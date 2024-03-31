@@ -11,7 +11,6 @@ const stats = {
 };
 
 const storageStats = JSON.parse(localStorage.getItem("stats"));
-//example
 
 if (storageStats !== null) {
   stats.cookie = storageStats.cookie;
@@ -48,6 +47,7 @@ function updateStorage() {
   localStorage.setItem("stats", JSON.stringify(stats));
 }
 
+//allow the user to reset
 function resetGame() {
   stats.cookie = 0;
   stats.CPS = 0;
@@ -58,6 +58,7 @@ function resetGame() {
 CookieButton.addEventListener("click", buyCookie);
 moreCookie.addEventListener("click", buyMore);
 
+// proc on every 1 sec
 setInterval(function () {
   stats.cookie += stats.CPS;
   updatePage();
