@@ -3,14 +3,21 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script src="script.js"></script>
+    <script src="script.js" defer></script>
     <link rel="stylesheet" href="style.css" />
-    <title>COOKIE MONSTAR</title>
+    <title>Cookie Monster</title>
   </head>
+
   <body>
-    <h1>GAME OF THE COOKIES</h1>
-    <p id="counter">0</p>
-    <button>Cookie</button>
-    <button>Moar Cookies</button>
+    <div class="container">
+      <h1>GAME OF THE COOKIES</h1>
+      <div class="info">
+        <p>Cookie Score: <span id="CookieSpan">0</span></p>
+        <p>Cookies per second: <span id="CPSSpan">0</span></p>
+      </div>
+      <button id="CookieButton">Nom Nom</button>
+      <button id="moreCookie">More Nom Noms</button>
+      <button id="resetButton" onclick="resetGame()">Reset</button>
+    </div>
   </body>
 </html>
