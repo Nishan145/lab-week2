@@ -11,6 +11,7 @@ const stats = {
 };
 
 const storageStats = JSON.parse(localStorage.getItem("stats"));
+//example
 
 if (storageStats !== null) {
   stats.cookie = storageStats.cookie;
