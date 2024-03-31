@@ -5,11 +5,6 @@ const moreCookie = document.getElementById("moreCookie");
 const CookieSpan = document.getElementById("CookieSpan");
 const CPSSpan = document.getElementById("CPSSpan");
 
-// const futureUpgrade = [
-//   { name: "autoclicker", cost: 100, cpsIncrease: 1 },
-//   { name: "Double Click", cost: 200, clickMultiplier: 2 },
-// ];
-
 const stats = {
   cookie: 0,
   CPS: 0,
