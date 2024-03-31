@@ -1,0 +1,50 @@
+body,
+html {
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container {
+  position: relative;
+}
+
+.container img {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 1;
+}
+
+h1 {
+  position: absolute;
+  top: -100px;
+  left: 10%;
+  margin-left: -50px;
+  color: aquamarine;
+}
+h1,
+.info,
+button {
+  position: relative;
+  z-index: 1;
+}
+.info {
+  margin-top: 20px;
+  text-align: center;
+  color: aquamarine;
+}
+
+button {
+  margin-top: 10px;
+  display: block;
+  margin: 10px auto;
+  color: violet;
+}
