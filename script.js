@@ -44,7 +44,6 @@ function buyMore() {
 //getting 100 more added
 function buyMajorUpgrade() {
   if (stats.cookie >= 100) {
-    stats.CPS += 100;
     stats.tenCPS += 100;
     stats.cookie -= 100;
     updatePage();
@@ -53,7 +52,7 @@ function buyMajorUpgrade() {
 }
 //record how many cookies/collected
 function updatePage() {
-  CookieSpan.textContent = stats.cookie + stats.tenCPS;
+  CookieSpan.textContent = stats.cookie;
   CPSSpan.textContent = stats.CPS;
   MajorUpgradeCPSSpan.textContent = stats.tenCPS;
 }
