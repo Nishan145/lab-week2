@@ -26,8 +26,7 @@ body {
 h1 {
   position: absolute;
   top: -100px;
-  left: 10%;
-  margin-left: -50px;
+  left: 0%;
   color: aquamarine;
 }
 h1,
@@ -44,7 +43,14 @@ button {
 
 button {
   margin-top: 10px;
+  border: none;
   display: block;
   margin: 10px auto;
-  color: violet;
+  color: rgb(234, 238, 240);
+  background-color: transparent;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: transparent;
 }
