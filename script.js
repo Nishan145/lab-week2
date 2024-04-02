@@ -1,5 +1,4 @@
 console.log("hello World");
-
 const CookieButton = document.getElementById("CookieButton");
 const moreCookie = document.getElementById("moreCookie");
 const CookieSpan = document.getElementById("CookieSpan");
@@ -50,6 +49,7 @@ function buyMajorUpgrade() {
     updateStorage();
   }
 }
+
 //record how many cookies/collected
 function updatePage() {
   CookieSpan.textContent = stats.cookie;
