@@ -30,12 +30,12 @@ function buyCookie() {
   updateStorage();
 }
 
-//Upgrade cookies for per second
+//getting 10 more added to the count
 function buyMore() {
   if (stats.cookie >= 10) {
     stats.CPS += 10;
-    //can do it like stats.cookie -=10; //short hand
-    stats.cookie = stats.cookie - 10;
+    stats.cookie -= 10;
+    // stats.cookie = stats.cookie - 10;
     updatePage();
     updateStorage();
   }
@@ -56,7 +56,6 @@ function updatePage() {
   CPSSpan.textContent = stats.CPS;
   MajorUpgradeCPSSpan.textContent = stats.tenCPS;
 }
-
 function updateStorage() {
   localStorage.setItem("stats", JSON.stringify(stats));
 }
